@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JsonApp1.MainPage">
+
+    <StackLayout>
+        <Label Text="{Binding Name}"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="CenterAndExpand"
+               TextColor="Black"
+               />
+        <Label Text="{Binding Year}"
+               FontSize="Medium" 
+               FontAttributes="Bold" 
+               HorizontalOptions="CenterAndExpand" 
+               />
+        <BoxView BackgroundColor="{Binding Color}"
+                 />
+        <BoxView BackgroundColor="{Binding Color}" HeightRequest="400"/>
+        <Button Text="Загрузить данные"
+                Command="{Binding LoadDataCommand}" 
+                VerticalOptions="EndAndExpand" 
+                BackgroundColor="DarkCyan"
+                BorderWidth="1"
+                BorderColor="Black"
+                />
+    </StackLayout>
+
+</ContentPage>
